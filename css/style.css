@@ -126,3 +126,54 @@ body {
     width: 300px;
     box-sizing: border-box;
 }
+
+#technologies-section {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+#technologies-section h1{
+    width: 800px;
+    justify-content: baseline;
+    color: #f5f5f5;
+}
+
+.technologies-container {
+    width: 1000px;
+    display: flex;
+}
+
+.technologies-container ul {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    list-style: none;
+    margin-left: 60px;
+}
+
+.technologies-container li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(206 221 233) 46%, rgb(180 187 250) 100%);
+    transition: 0.3s;
+}
+
+.technologies-container li:hover {
+    transform: scale(1.2);
+}
+
+.technologies-container li i {
+    font-size: 90px;
+    color: #222222;
+}
