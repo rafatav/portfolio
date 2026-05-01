@@ -135,12 +135,10 @@ body {
     align-items: center;
     background-color: #222222;
     flex-direction: column;
-    margin-bottom: 100px;
 }
 
 #technologies-section h1{
     width: 800px;
-    justify-content: baseline;
     color: #f5f5f5;
 }
 
@@ -176,4 +174,91 @@ body {
 .technologies-container li i {
     font-size: 90px;
     color: #222222;
+}
+
+#projects-section {
+    width: 100%;
+    height: 1200px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects-container {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects-section h2 {
+    width: 800px;
+    font-size: 2em;
+}
+
+.projects-list {
+    display: flex;
+    /* justify-content: space-between; */
+    list-style: none;
+    margin: 0;
+}
+
+.project {
+    display: flex;
+    width: 400px;
+    height: 500px;
+    background-color: rgba(186, 186, 186, 0.2);
+    box-shadow: 1px 1px 5px #222222;
+    border-radius: 30px;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    transition: 0.3s ease;
+    margin: 5px;
+}
+
+.project p {
+    border-radius: 5px;
+    height: 150px;
+    width: 90%;
+    margin-top: 0;
+    background-color: rgb(255, 255, 255, 0.2);
+    padding-top: 20px;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 90%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+#img1 {
+    background-image: url("../assets/jump-game.png");
+}
+
+#img2 {
+    background-image: url("../assets/worst-day.png");
+}
+
+#img3 {
+    background-image: url("../assets/look-game.png");
+}
+
+#img4 {
+    background-image: url("../assets/spring.png");
+    background-color: #fff;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
 }
