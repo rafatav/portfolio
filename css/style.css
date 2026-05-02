@@ -162,7 +162,7 @@ body {
     align-items: center;
     width: 130px;
     height: 130px;
-    border-radius: 10px;
+    border-radius: 50px;
     background-image: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(206 221 233) 46%, rgb(180 187 250) 100%);
     transition: 0.3s;
 }
@@ -261,4 +261,70 @@ body {
 .project-link {
     text-decoration: none;
     color: inherit;
+}
+
+#contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 800px;
+    width: 100%;
+    background-color: #222222;
+}
+
+.contact-container, #contact-section h2 {
+    color: #f5f5f5;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin: 5px 0px;
+    width: 400px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+#contact-section h2 {
+    width: 800px;
+    font-size: 2em;
+}
+
+.socials-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socials-container i {
+    font-size: 50px;
+    margin: 0px 20px;
+    color: #f5f5f5;
+    transition: 0.3s ease;
+}
+
+.socials-container i:hover {
+    color: #a9a9a9;
+    transform: scale(1.05);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+.footer-container a {
+    text-decoration: underline;
+    color: #132b39;
 }
