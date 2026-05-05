@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
@@ -31,13 +30,12 @@
                         <p class="title"><span>D</span><span>e</span><span>s</span><span>e</span><span>n</span><span>v</span><span>o</span><span>l</span><span>v</span><span>e</span><span>d</span><span>o</span><span>r</span></p>
                         <p class="title"><span>F</span><span>u</span><span>l</span><span>l</span><span>-</span><span>S</span><span>t</span><span>a</span><span>c</span><span>k</span></p>
                         <p class="title"><span>S</span><span>p</span><span>r</span><span>i</span><span>n</span><span>g</span><span>+</span><span>A</span><span>n</span><span>g</span><span>u</span><span>l</span><span>a</span><span>r</span></p>
-                        <!-- <p class="name">&#125</p> -->
                     </div>
                 </div>
             </section>
-            <section id="about-section">
+            <section id="about-section" class="bottom-border">
                 <div class="about-container">
-                    <h1 class="section-title">Sobre</h1>
+                    <h1 class="section-title">Sobre Mim</h1>
                     <p class="section-subtitle">Conheça um pouco sobre mim e da minha trajetória no mundo do desenvolvimento</p>
                     <div class="presentation-container">
                         <div class="presentation-text">
@@ -49,7 +47,7 @@
                     </div>
                 </div>
             </section>
-            <section id="technologies-section">
+            <section id="technologies-section" class="bottom-border">
                 <div class="technologies-container">
                     <h1 class="section-title">Tecnologias</h1>
                     <p class="section-subtitle">Estas são algumas das linguagens e ferramentas que uso para desenvolver meus projetos</p>
@@ -65,33 +63,33 @@
                     </div>
                 </div>
             </section>
-            <section id="projects-section">
+            <section id="projects-section" class="bottom-border">
                 <div class="projects-container">
                     <h2 class="section-title">Projetos</h2>
-                    <p class="section-subtitle">Projetos que criei ao longo da minha trajetória com desenvolvimento de software</p>
+                    <p class="section-subtitle">Alguns projetos que criei ao longo da minha trajetória em desenvolvimento de software</p>
                     <div class="projects">
-                        <ul class="projects-list">
-                            <a href="https://github.com/rafatav/jumpgame" target="_blank" class="project-link">
-                                <li class="project">
-                                    <div class="project-image" id="img1"></div>
-                                    <h3>Jump</h3>
-                                    <p>Game de plataforma desenvolvido usando a engine Godot com a linguagem de programação GDScript</p>
-                                </li>
-                            </a>
-                            <a href="https://scratch.mit.edu/projects/1290908291/" target="_blank" class="project-link">
-                                <li class="project">
-                                    <div class="project-image" id="img2"></div>
-                                    <h3>This is the Worst Day of Her Life</h3>
-                                    <p>Game criado no Scratch, plataforma de programação em blocos</p>
-                                </li>
-                            </a>
-                        </ul>
                         <ul class="projects-list">
                             <a href="https://github.com/rafatav/bookstore-project" target="_blank" class="project-link">
                                 <li class="project">
                                     <div class="project-image" id="img4"></div>
                                     <h3>Projeto de Sebo</h3>
-                                    <p>Projeto Back-end Spring</p>
+                                    <p>Projeto back-end de uma webstore de sebo. Feito com Spring Boot e com aplicação de fluxo CI/CD, além do uso do Docker</p>
+                                </li>
+                            </a>
+                            <a href="https://github.com/rafatav/jumpgame" target="_blank" class="project-link">
+                                <li class="project">
+                                    <div class="project-image" id="img1"></div>
+                                    <h3>Jump</h3>
+                                    <p>Demo de game de plataforma desenvolvido usando a engine Godot com a linguagem de programação GDScript</p>
+                                </li>
+                            </a>
+                        </ul>
+                        <ul class="projects-list">
+                            <a href="https://scratch.mit.edu/projects/1290908291/" target="_blank" class="project-link">
+                                <li class="project">
+                                    <div class="project-image" id="img2"></div>
+                                    <h3>This is the Worst Day of Her Life</h3>
+                                    <p>Game criado no Scratch, plataforma de programação em blocos da MIT Media Lab</p>
                                 </li>
                             </a>
                             <a href="https://github.com/rafatav/lookgame" target="_blank" class="project-link">
@@ -108,27 +106,27 @@
             <section id="contact-section">
                 <div class="contact-container">
                     <h2 class="section-title">Contato</h2>
-                    <p class="section-subtitle">Entre em contato comigo preenchendo o formulário abaixo ou pelo LinkedIn</p>
+                    <p class="section-subtitle">Entre em contato comigo pelo formulário abaixo ou pelo LinkedIn</p>
                     <div class="contacts">
                         <form action="https://formspree.io/f/mwvyproe" method="POST">
                             <div class="contact-form">
                                 <label for="name">Nome</label>
-                                <input type="text" name="name" placeholder="Seu nome" required>
+                                <input type="text" id="name" name="name" placeholder="Seu nome" required autocomplete="name">
                             </div>
                             <div class="contact-form">
                                 <label for="subject">Assunto</label>
-                                <input type="text" name="subject" placeholder="Assunto">
+                                <input type="text" id="subject" name="subject" placeholder="Assunto">
                             </div>
                             <div class="contact-form">
                                 <label for="email">E-mail</label>
-                                <input type="email" name="email" placeholder="Seu e-mail" required>
+                                <input type="email" id="email" name="email" placeholder="Seu e-mail" required autocomplete="email">
                             </div>
                             <div class="contact-form">
                                 <label for="message">Mensagem</label>
-                                <textarea name="message" placeholder="Sua mensagem" required></textarea>
+                                <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea>
                             </div>
-                            <div class="contact-form form-btn">
-                                <input type="submit" value="Enviar" />
+                            <div class="contact-form">
+                                <input type="submit" class="form-btn" value="Enviar" />
                             </div>
                         </form>
                         <div class="socials-container">
@@ -140,7 +138,7 @@
             </section>
             <footer>
                 <div class="footer-container">
-                    <p>Feito por Rafael Tavares @2026. Veja o <a href="https://github.com/rafatav/portfolio" target="_blank">código fonte</a></p>
+                    <p>Feito por Rafael Tavares @<span id="year"></span>. Veja o <a href="https://github.com/rafatav/portfolio" target="_blank">código fonte</a></p>
                 </div>
             </footer>
         </main>
